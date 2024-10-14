@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/Images/UI/Style.uss?fileID=7433441132597879392&amp;guid=17abaf57508f41a4d83ede0a57c4ffbc&amp;type=3#Style" />
+    <ui:VisualElement name="Background" class="background" style="flex-grow: 1;" />
+    <ui:Label tabindex="-1" text="BLORG" display-tooltip-when-elided="true" name="Logo" class="main-label" style="-unity-text-align: upper-center; font-size: 32px; -unity-font-definition: url(&apos;project://database/Assets/_Game/Images/UI/Fonts/Oswald-VariableFont_wght.ttf?fileID=12800000&amp;guid=7c09fcd8e6ff0a4498498acb9be7ce29&amp;type=3#Oswald-VariableFont_wght&apos;); -unity-font-style: bold; color: rgb(115, 192, 171); text-shadow: 2px 1px 0 rgb(0, 0, 0); -unity-text-outline-width: 2px; -unity-text-outline-color: rgb(0, 0, 0); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; height: auto;" />
+    <ui:GroupBox class="menu-cantainer" style="min-height: auto; min-width: 50%;">
+        <ui:Button text="Play" display-tooltip-when-elided="true" focusable="true" name="PlayBtn" class="button-style" />
+        <ui:Button text="Options" display-tooltip-when-elided="true" name="OptionsBtn" class="button-style" style="background-image: url(&apos;project://database/Assets/_Game/Images/UI/UI_base_button.png?fileID=2800000&amp;guid=155c3f52143b48848961c3732947e58b&amp;type=3#UI_base_button&apos;); -unity-slice-left: 16; -unity-slice-top: 16; -unity-slice-right: 16; -unity-slice-bottom: 16; -unity-background-scale-mode: stretch-to-fill;" />
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="ExitBtn" class="button-style" style="background-image: url(&apos;project://database/Assets/_Game/Images/UI/UI_base_button.png?fileID=2800000&amp;guid=155c3f52143b48848961c3732947e58b&amp;type=3#UI_base_button&apos;); -unity-slice-left: 16; -unity-slice-top: 16; -unity-slice-right: 16; -unity-slice-bottom: 16; -unity-background-scale-mode: stretch-to-fill;" />
+    </ui:GroupBox>
+</ui:UXML>

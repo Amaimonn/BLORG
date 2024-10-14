@@ -1,0 +1,94 @@
+.button-style:hover {
+    background-image: url('project://database/Assets/_Game/Images/UI/UI_base_button.png?fileID=2800000&guid=155c3f52143b48848961c3732947e58b&type=3#UI_base_button');
+    -unity-slice-left: 16;
+    -unity-slice-top: 16;
+    -unity-slice-right: 16;
+    -unity-slice-bottom: 16;
+    -unity-background-scale-mode: stretch-to-fill;
+    cursor: initial;
+    scale: 1.03 1.03;
+    border-left-color: rgba(57, 105, 102, 0.85);
+    border-right-color: rgba(57, 105, 102, 0.85);
+    border-top-color: rgba(57, 105, 102, 0.85);
+    border-bottom-color: rgba(57, 105, 102, 0.85);
+    border-top-width: -3px;
+    border-right-width: -3px;
+    border-bottom-width: -3px;
+    border-left-width: -3px;
+}
+
+.button-style {
+    background-image: url('project://database/Assets/_Game/Images/UI/UI_base_button.png?fileID=2800000&guid=155c3f52143b48848961c3732947e58b&type=3#UI_base_button');
+    -unity-slice-left: 16;
+    -unity-slice-top: 16;
+    -unity-slice-right: 16;
+    -unity-slice-bottom: 16;
+    -unity-background-scale-mode: stretch-to-fill;
+    cursor: initial;
+    border-left-color: rgba(57, 105, 90, 0);
+    border-right-color: rgba(57, 105, 90, 0);
+    border-top-color: rgba(57, 105, 90, 0);
+    border-bottom-color: rgba(57, 105, 90, 0);
+    font-size: 150%;
+    width: auto;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 0;
+    margin-left: 0;
+    max-height: 100%;
+    max-width: 100%;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    text-overflow: ellipsis;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.main-label {
+    margin-top: auto;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    opacity: 1;
+    font-size: 14%;
+}
+
+.background {
+    position: absolute;
+    background-image: url('project://database/Assets/_Game/Images/UI/UI_base_button.png?fileID=2800000&guid=155c3f52143b48848961c3732947e58b&type=3#UI_base_button');
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.unity-group-box {
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.menu-cantainer {
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+    width: auto;
+    height: auto;
+    min-width: 50%;
+    min-height: 50%;
+    padding: 1%;
+    max-height: none;
+    max-width: none;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    background-color: rgba(22, 46, 58, 0.47);
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

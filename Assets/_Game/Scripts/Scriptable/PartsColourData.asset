@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb1386c62f5ebd49b50295e984fcd30, type: 3}
+  m_Name: PartsColourData
+  m_EditorClassIdentifier: 
+  headColourTexture:
+  - {fileID: 2800000, guid: 54b6b1b315856774d91f8a43ec45accb, type: 3}
+  - {fileID: 2800000, guid: 3a331c36d739d664984e4036fd87aa77, type: 3}
+  - {fileID: 2800000, guid: 45436db48ded5a54aba3c2ed312a184f, type: 3}
+  headColourMat:
+  - {fileID: 2100000, guid: 3c41d9bd6d296e04ab08d8e5cafb4c57, type: 2}
+  - {fileID: 2100000, guid: 12c624531810ed1478d51e40d7127b57, type: 2}
+  - {fileID: 2100000, guid: dc7354c1131fa924e8276f58689f24de, type: 2}
+  bodyColourTexture:
+  - {fileID: 2800000, guid: 2f10dd44400778a4f9198af0022c6647, type: 3}
+  - {fileID: 2800000, guid: 4872df6f31127da4d99ffacaf032e128, type: 3}
+  - {fileID: 2800000, guid: fb5fec9bb453ac54baeabe52f7c59418, type: 3}
+  bodyColourMat:
+  - {fileID: 2100000, guid: f177334c1fcb7464782c146860c5d691, type: 2}
+  - {fileID: 2100000, guid: 9fdb206d038733d43b84e10ab2aa34de, type: 2}
+  - {fileID: 2100000, guid: 7ffc4df302852774abb70ec06e65af33, type: 2}
+  left_handColourTexture:
+  - {fileID: 2800000, guid: 9f979c7aa285e814ea0fb045f6d1ab1c, type: 3}
+  - {fileID: 2800000, guid: bac316e90fb2ab84a89ec2e7957002af, type: 3}
+  - {fileID: 2800000, guid: 9f979c7aa285e814ea0fb045f6d1ab1c, type: 3}
+  left_handColourMat:
+  - {fileID: 2100000, guid: 2f94aec2c8781b94b9d3b577f28a16f7, type: 2}
+  - {fileID: 2100000, guid: e5ecb2d16be877545bbaa5332cfcf63f, type: 2}
+  - {fileID: 2100000, guid: 412447ceadbec004d8013541d4064d75, type: 2}
+  right_handColourTexture:
+  - {fileID: 2800000, guid: c6472feb4d2dea3438ed1aad1557c9a5, type: 3}
+  - {fileID: 2800000, guid: 02085c31be6c15b4b9c372a96cdbe8b6, type: 3}
+  - {fileID: 2800000, guid: c33f2438a2262ab4eb2d39a343452f26, type: 3}
+  right_handColourMat:
+  - {fileID: 2100000, guid: fffa512158a14284cac3b9303d772f7d, type: 2}
+  - {fileID: 2100000, guid: 76663955b4b751e46a7bf07cad6baee0, type: 2}
+  - {fileID: 2100000, guid: c6bfe40aa9aad8542b31a2b2aa729950, type: 2}
+  hoodColourTexture:
+  - {fileID: 2800000, guid: 989f471363721704ab962497747f1ae2, type: 3}
+  - {fileID: 2800000, guid: 2ddc2e9c6d21c314f9184ca5d272802e, type: 3}
+  - {fileID: 2800000, guid: c3b085049b5ca874ca4abea919470741, type: 3}
+  hoodColourMat:
+  - {fileID: 2100000, guid: 32eea22c5855db7468b1ae5143ef3558, type: 2}
+  - {fileID: 2100000, guid: e981c338cb16d0e42ab3db04c230f3c0, type: 2}
+  - {fileID: 2100000, guid: 409a0b3b1ef61c449a3ee9495a15a315, type: 2}
