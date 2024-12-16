@@ -5,11 +5,9 @@ public class ColourChange : MonoBehaviour
 {
     [SerializeField] private Material[] _heroMaterials = new Material[3];
     [SerializeField] private List<GameObject> _playerParts;
-    //[SerializeField] private List<GameObject> _playerMutations;
-   // [SerializeField] private CurrentColourDataSO _currentColour;
+
     private readonly List<Renderer> _partRenderers = new();
 
-    // private static bool valueReseted = false;
 
     private void Start()
     {
@@ -17,12 +15,6 @@ public class ColourChange : MonoBehaviour
         {
             _partRenderers.Add(_playerParts[iterator].GetComponent<Renderer>());
         }
-
-        // if (!valueReseted)
-        // {
-        //     CurrentColourData.SetDefaultColour();
-        //     valueReseted = true;
-        // }
 
         ChangeMaterials(_heroMaterials[CurrentColourData.CurrentColour]);
     }

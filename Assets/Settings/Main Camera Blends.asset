@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomBlends:
   - From: FollowVirtualCamera
-    To: AimVirtualCamera
+    To: Third Person Aim Camera
     Blend:
       Style: 1
       Time: 0.3
@@ -24,10 +24,10 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 4
-  - From: AimVirtualCamera
+  - From: Third Person Aim Camera
     To: FollowVirtualCamera
     Blend:
-      Style: 3
+      Style: 1
       Time: 0.3
       CustomCurve:
         serializedVersion: 2

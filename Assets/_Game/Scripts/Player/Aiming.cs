@@ -14,10 +14,10 @@ public class Aiming : MonoBehaviour
     }
 
     [Header("Aim")]
-    [SerializeField] private bool _isAiming;
     [SerializeField] private LayerMask _groundMask;
-    [SerializeField] private bool _ignoreHeight;
     [SerializeField] private Transform _aimedTransform;
+    [SerializeField] private float _maxTopLookAngle = 45;
+    [SerializeField] private float _maxBottomLookAngle = 45;
 
     [Header("Laser")]
     [SerializeField] private LineRenderer _laserRenderer;
@@ -53,7 +53,7 @@ public class Aiming : MonoBehaviour
     private Action<InputAction.CallbackContext> _shoot;
     private Action<InputAction.CallbackContext> _cancelShooting;
     private Vector2 _aimInput;
-    // private Action<InputAction.CallbackContext> _aimRotating;
+    private EventBus _eventBus;
 
     public void Initialize()
     {
@@ -75,7 +75,7 @@ public class Aiming : MonoBehaviour
         _chargeAtack = ctx  => ChargeAtack();
         _shoot = ctx => Shoot();
         _cancelShooting = ctx => SwapShootingMode(false);
-        // _aimRotating = ctx => AimRotating(ctx.ReadValue<Vector2>());
+        _eventBus = ServiceLocator.Current.Get<EventBus>();
     }
 
     private void OnEnable()
@@ -107,7 +107,6 @@ public class Aiming : MonoBehaviour
         _playerActions.Atack.started += _chargeAtack;
         _playerActions.Atack.canceled  += _shoot;
         _playerActions.CancelAtack.performed += _cancelShooting;
-        // _xyCameraMove.action.performed += _aimRotating;
     }
 
     private void UnsubscribeInput()
@@ -115,7 +114,6 @@ public class Aiming : MonoBehaviour
         _playerActions.Atack.started -= _chargeAtack;
         _playerActions.Atack.canceled  -= _shoot;
         _playerActions.CancelAtack.performed -= _cancelShooting;
-        // _xyCameraMove.action.performed -= _aimRotating;
     }
 
     private void ReadAimInput()
@@ -128,9 +126,6 @@ public class Aiming : MonoBehaviour
         if (!_shootingMode)
             return;
 
-        // var lookInput = context.ReadValue<Vector2>();
-        // var lookInput = _xyCameraMove.action.ReadValue<Vector2>();
-    
         _aimedTransform.Rotate(new Vector3(-aimInput.y * _ySpeed * Time.deltaTime, 0.0f, 0.0f));
         _parent.transform.Rotate(new Vector3(0.0f, aimInput.x * _xSpeed * Time.deltaTime, 0.0f));
 
@@ -142,7 +137,7 @@ public class Aiming : MonoBehaviour
             localAngles.x -= 360.0f;
         }
 
-        localAngles.x = Mathf.Clamp(localAngles.x + xIncrement, -85.0f, 85.0f);
+        localAngles.x = Mathf.Clamp(localAngles.x + xIncrement, -_maxTopLookAngle, _maxBottomLookAngle);
         _aimedTransform.localEulerAngles = localAngles;
     }
     
@@ -213,19 +208,6 @@ public class Aiming : MonoBehaviour
             Debug.Log(_currentDelay + " remain");
     }
 
-    // private Vector3 GetPoint()
-    // {
-    //     var ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
-    //     if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, _groundMask, QueryTriggerInteraction.Ignore))
-    //     {
-    //         return hitInfo.point;
-    //     }
-    //     else
-    //     {
-    //         return ray.GetPoint(1000.0f);
-    //     }
-    // }
-
     private Vector3 GetDirection()
     {
         var ray = new Ray(_mainCamera.transform.position, _mainCamera.transform.forward);
@@ -242,9 +224,6 @@ public class Aiming : MonoBehaviour
     
     private void Shoot()
     {
-        // if (RaycastUtilities.PointerIsOverUI(Input.mousePosition))
-        //     return;
-
         if (_shootingMode == false)
             return;
 
@@ -273,9 +252,12 @@ public class Aiming : MonoBehaviour
         if (_aimCamera != null)
             _aimCamera.gameObject.SetActive(mode);
         if (_followCamera != null)
+        {
             _followCamera.gameObject.SetActive(!mode);
+            _followCamera.transform.rotation = _aimCamera.transform.rotation;
+        }
         _shootingMode = mode;
-        ServiceLocator.Current.Get<EventBus>().Invoke(new ShootingToggleCallback(mode));
+        _eventBus.Invoke(new ShootingToggleCallback(mode));
     }
 
     private void RefreshLaser()

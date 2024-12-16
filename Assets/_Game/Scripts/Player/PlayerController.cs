@@ -70,7 +70,6 @@ public class PlayerController : MonoBehaviour
     private void SubscribeInput()
     {
         _inputController.Wizard.Jump.performed += _jump;
-        // _inputController.Player.Move.performed += _move;
         _inputController.Wizard.ChangeToBlue.performed += _changeToBlue;
         _inputController.Wizard.ChangeToOrange.performed += _changeToOrange;
         _inputController.Wizard.ChangeToGreen.performed += _changeToGreen;
@@ -79,7 +78,6 @@ public class PlayerController : MonoBehaviour
     private void UnsubscribeInput()
     {
         _inputController.Wizard.Jump.performed -= _jump;
-        // _inputController.Player.Move.performed -= _move;
         _inputController.Wizard.ChangeToBlue.performed -= _changeToBlue;
         _inputController.Wizard.ChangeToOrange.performed -= _changeToOrange;
         _inputController.Wizard.ChangeToGreen.performed -= _changeToGreen;
@@ -92,7 +90,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Walk(_moveInput);
-        // Rotating();
     }
 
     private void ReadMoveInput()
@@ -129,7 +126,6 @@ public class PlayerController : MonoBehaviour
                 QueryTriggerInteraction.Ignore))
         {
             _rigidBody.AddForce(Vector3.up * -0.9f, ForceMode.VelocityChange);
-            //position.y = obstaclePoint.y;
         }
         else
         {
