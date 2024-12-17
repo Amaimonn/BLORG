@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141945164}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfab05becf800f74db70a7817c4c994d, type: 3}
   m_Name: 
@@ -14976,6 +14976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FollowVirtualCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 2158857131076448522, guid: 2d4b220e4f00fcc43a3f1803ad48a752, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6281685711754239189, guid: 2d4b220e4f00fcc43a3f1803ad48a752, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.904705
@@ -15015,6 +15019,10 @@ PrefabInstance:
     - target: {fileID: 6281685711754239189, guid: 2d4b220e4f00fcc43a3f1803ad48a752, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645303030018649018, guid: 2d4b220e4f00fcc43a3f1803ad48a752, type: 3}
+      propertyPath: BlendHint
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7645303030018649018, guid: 2d4b220e4f00fcc43a3f1803ad48a752, type: 3}
       propertyPath: Target.LookAtTarget
@@ -16070,6 +16078,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336064097178751113, guid: 0f0e45e5fdc0d5b4588c3c0603bdf206, type: 3}
+      propertyPath: Damping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 863696353024692991, guid: 0f0e45e5fdc0d5b4588c3c0603bdf206, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.43
