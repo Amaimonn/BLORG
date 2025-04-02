@@ -9,3 +9,5 @@ You stand against endless waves of enemies swarming toward you—just like in Va
 <img width="1280" src="https://github.com/user-attachments/assets/f1722ec2-85f3-420e-8857-b813a3f571da" />
 <img width="1280" src="https://github.com/user-attachments/assets/8754acef-d692-4a29-a7c1-416a3801b7d9" />
 <img width="1280" src="https://github.com/user-attachments/assets/adfef6c1-88e6-4177-ba97-fbf59d75a33a" />
+
+*"Survival is just the first step. Master the colors — or drown in clones."*
