@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e4fedce76d9834e97cc435fa968741, type: 3}
   m_Name: EnergyDrinkSO
   m_EditorClassIdentifier: 
-  _spawnPrefab: {fileID: 919132149155446097, guid: 4b86d26c0b242e04c82b9c3f68904967, type: 3}
+  _spawnPrefab: {fileID: 728491015454270881, guid: c93a6c4c6c8e86a479e262e35c9e8742, type: 3}

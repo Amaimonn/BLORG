@@ -88,7 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabSO: {fileID: 11400000, guid: 52374a305a59a4048a5f5376921ab0a0, type: 2}
   _colourIndex: 0
-  _isLocalSceneObject: 1
+  _energyAmount: 10
+  _isLocalSceneObject: 0
 --- !u!136 &132693973327945351
 CapsuleCollider:
   m_ObjectHideFlags: 0
