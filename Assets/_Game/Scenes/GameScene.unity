@@ -7832,6 +7832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyDrinkPrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4458688899537308862, guid: c93a6c4c6c8e86a479e262e35c9e8742, type: 3}
+      propertyPath: _isLocalSceneObject
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8177,6 +8181,10 @@ PrefabInstance:
     - target: {fileID: 728491015454270881, guid: c93a6c4c6c8e86a479e262e35c9e8742, type: 3}
       propertyPath: m_Name
       value: EnergyDrinkPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458688899537308862, guid: c93a6c4c6c8e86a479e262e35c9e8742, type: 3}
+      propertyPath: _isLocalSceneObject
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
